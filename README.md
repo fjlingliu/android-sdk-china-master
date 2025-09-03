@@ -254,8 +254,8 @@ android:name="baiduSecretKey" android:value="运营提供" />
 XJGame.onCreate(Application application, XJPlatformType type);
 ```
 
-**字段说明：（具体要对接的平台类型找运营提供）**
-- XJPlatformType：（平台类型说明）
+**字段说明：**
+- XJPlatformType：（平台类型说明：具体要对接的平台类型找运营提供）
 - XJ_PLATFORM_TYPE_DD 顶点
 - XJ_PLATFORM_TYPE_HF 浩繁
 - XJ_PLATFORM_TYPE_LJ 零界
