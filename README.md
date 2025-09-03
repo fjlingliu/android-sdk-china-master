@@ -255,14 +255,15 @@ XJGame.onCreate(Application application, XJPlatformType type);
 ```
 
 **字段说明：**
+
 - XJPlatformType：（平台类型说明：具体要对接的平台类型找运营提供）
-- XJ_PLATFORM_TYPE_DD 顶点
-- XJ_PLATFORM_TYPE_HF 浩繁
-- XJ_PLATFORM_TYPE_LJ 零界
+- XJ_PLATFORM_TYPE_DD 鼎点
+- XJ_PLATFORM_TYPE_HF 浩凡
+- XJ_PLATFORM_TYPE_LJ 零界网络
 - XJ_PLATFORM_TYPE_LJO 零界复用
-- XJ_PLATFORM_TYPE_LL 06
-- XJ_PLATFORM_TYPE_LQ 蓝企
-- XJ_PLATFORM_TYPE_MJ 麦基
+- XJ_PLATFORM_TYPE_LL 零六
+- XJ_PLATFORM_TYPE_LQ 蓝启
+- XJ_PLATFORM_TYPE_MJ 麦叽网络
 
 ### 授权接口
 
@@ -280,14 +281,14 @@ XJGame.authorization(Activity mContext, HashMap<String, String> dataMap, AuthCal
 
 dataMap参数：
 
-| KEY               | 测试数据                       | 可否为空 | 描述                   |
-|-------------------|----------------------------|------|----------------------|
-| pid               | 310000                     | 不可以  | 游戏id                 |
-| gameid            | 310000                     | 不可以  | 游戏id                 |
-| gameName          | 安卓测试                       | 不可以  | 游戏名称                 |
-| oaid              | String                     | 可以   | oaid的值               |
-| assetFileName     | String                     | 可以   | oaid证书文件名（放到assets中） |
-| oaidLibraryString | String                     | 可以   | oaid库字符串             |
+| KEY               | 测试数据   | 可否为空 | 描述                   |
+|-------------------|--------|------|----------------------|
+| pid               | 310000 | 不可以  | 游戏id                 |
+| gameid            | 310000 | 不可以  | 游戏id                 |
+| gameName          | 安卓测试   | 不可以  | 游戏名称                 |
+| oaid              | String | 可以   | oaid的值               |
+| assetFileName     | String | 可以   | oaid证书文件名（放到assets中） |
+| oaidLibraryString | String | 可以   | oaid库字符串             |
 
 AuthCallBack回调：
 
@@ -323,14 +324,14 @@ public interface LoginCallBack {
 
 UserInfo类：
 
-| 字段        | 说明                     |
-|-----------|------------------------|
-| userNo    | 用户唯一标识（cp用户唯一标识码）      |
-| loginName | 用户名                    |
+| 字段         | 说明                     |
+|------------|------------------------|
+| userNo     | 用户唯一标识（cp用户唯一标识码）      |
+| loginName  | 用户名                    |
 | isRegister | 是否注册（true：注册，false:登录） |
-| token     | token（用于登录验证）          |
-| loginType | 登录类型(18:微信)            |
-| extra     | 其他信息（json格式）           |
+| token      | token（用于登录验证）          |
+| loginType  | 登录类型(18:微信)            |
+| extra      | 其他信息（json格式）           |
 
 extra字段说明：
 
@@ -436,9 +437,15 @@ Activity生命周期：
 ```java
 // 在Activity的对应方法中调用
 XJGame.onResume(this);
-XJGame.onPause();
-XJGame.onActivityResult(requestCode, resultCode, data);
-XJGame.onConfigurationChanged(newConfig);
+XJGame.
+
+onPause();
+XJGame.
+
+onActivityResult(requestCode, resultCode, data);
+XJGame.
+
+onConfigurationChanged(newConfig);
 ```
 
 ## 注意事项
