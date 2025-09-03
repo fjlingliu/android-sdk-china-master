@@ -254,7 +254,7 @@ android:name="baiduSecretKey" android:value="运营提供" />
 XJGame.onCreate(Application application, XJPlatformType type);
 ```
 
-**字段说明：**
+**字段说明：（具体要对接的平台类型找运营提供）**
 - XJPlatformType：（平台类型说明）
 - XJ_PLATFORM_TYPE_DD 顶点
 - XJ_PLATFORM_TYPE_HF 浩繁
@@ -436,15 +436,9 @@ Activity生命周期：
 ```java
 // 在Activity的对应方法中调用
 XJGame.onResume(this);
-XJGame.
-
-onPause();
-XJGame.
-
-onActivityResult(requestCode, resultCode, data);
-XJGame.
-
-onConfigurationChanged(newConfig);
+XJGame.onPause();
+XJGame.onActivityResult(requestCode, resultCode, data);
+XJGame.onConfigurationChanged(newConfig);
 ```
 
 ## 注意事项
