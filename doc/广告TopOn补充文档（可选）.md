@@ -7,7 +7,7 @@
 
 ```gradle
 // SDK适配广告的支持库
-implementation "com.xinji.sdk.china:ads-topon:1.0.0.1"
+implementation "com.xinji.sdk.china:ads-topon:1.0.0.2"
 ```
 
 ## 调用方法

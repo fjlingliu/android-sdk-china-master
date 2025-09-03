@@ -1,10 +1,10 @@
 ext {
     versions = [
             applicationIdDefault: "com.xinji.sdk",
-            compileSdkVersion   : 34,
+            compileSdkVersion   : 30,
             minSdkVersion       : 24,
-            targetSdkVersion    : 34,
-            buildToolsVersion   : "34.0.0",
+            targetSdkVersion    : 30,
+            buildToolsVersion   : "30.0.3",
     ]
 
 

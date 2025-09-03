@@ -6,7 +6,7 @@ implementation 'io.github.sinaweibosdk:core:13.10.5@aar'
 implementation 'com.taptap.sdk:tap-core:4.3.12'
 implementation 'com.taptap.sdk:tap-kit:4.3.12'
 implementation 'com.taptap.sdk:tap-login:4.3.12'
-implementation "com.xinji.sdk.china:login-taptap:1.0.0.1"
+implementation "com.xinji.sdk.china:login-taptap:1.0.0.2"
 ```
 
 # 2. 冲突解决

@@ -24,10 +24,35 @@ allprojects {
             url "https://maven.pkg.github.com/fjlingliu/xinjiAndroidSdk"
             credentials {
                 //todo  根据文档去替换
-                username = "xxxx"
-                password = "xxxxx"
+                username = "xxxxxx"
+                password = "XXXXXXXXXXXXXX"
             }
         }
+
+        /**
+         * topon仓库
+         */
+        flatDir {
+            dirs 'libs'
+        }
+
+        maven {
+            url 'https://jitpack.io'
+        }
+        //Anythink(Core)
+        maven {
+            url "https://jfrog.takuad.com/artifactory/china_sdk"
+        }
+        //抖音仓库
+        maven { url 'https://artifact.bytedance.com/repository/AwemeOpenSDK' }
+        maven {
+            url 'https://artifact.bytedance.com/repository/ttgamesdk/'
+        }
+        //Csj
+        maven {
+            url "https://artifact.bytedance.com/repository/pangle"
+        }
+
     }
 }
 
