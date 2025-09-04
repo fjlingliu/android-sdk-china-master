@@ -69,8 +69,9 @@ XJGame.showAds(MainActivity.this, XJAdType.AD_TYPE_BANNER, "banner_test", xjAdPo
 ```
 
 ## 集成注意
+### (1) 要求Androidx接入，不支持Support。
 
-### (1) 资源优化
+### (2) 资源优化
 
 如果您开启了 **shrinkResource**，则需要在 `res/raw` 路径下加一个 `keep.xml`，内容如下：
 
